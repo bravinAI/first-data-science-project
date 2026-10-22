@@ -1,49 +1,42 @@
-# First Data Science Project
+# Student Performance Data Analysis
 
-This repository is a minimal data science starter project built around a Jupyter Notebook. It is currently focused on validating the local Python environment and confirming that common data science libraries are installed and functional.
+This project explores student performance in Mathematics using the Student
+Performance dataset from the
+[UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/320/student+performance).
+The analysis is documented in a Jupyter notebook and focuses on grade
+distributions, study time, school absences, and the relationship between
+earlier grades and final grades.
 
-## Project contents
+## Project files
 
-- `first_data_science_project.ipynb` — notebook used to check the installed versions of `pandas`, `numpy`, and `matplotlib`.
+- `student_performance_data_analysis.ipynb` — the complete analysis, including
+  code, visualizations, findings, and conclusion.
+- `student-mat.csv` — the Mathematics dataset used by the notebook. This data
+  file is excluded from Git; download it from the UCI dataset page and place it
+  in the project root before running the notebook.
 
-## Purpose
+The dataset is provided under the
+[Creative Commons Attribution 4.0 International (CC BY 4.0) license](https://creativecommons.org/licenses/by/4.0/).
 
-This project is intended as a lightweight starting point for future data analysis, experimentation, and model-building work. At this stage, it does not yet include a dataset, custom scripts, or model artifacts.
+## Run the notebook
 
-## Prerequisites
+Requirements: Python 3.10 or later, Jupyter Notebook (or VS Code with the
+Jupyter extension), and `pandas`, `numpy`, and `matplotlib`.
 
-- Python 3.10+
-- Jupyter Notebook or VS Code with the Jupyter extension
-- The following Python packages:
-  - `pandas`
-  - `numpy`
-  - `matplotlib`
+Install the required packages:
 
-## Local setup
+```bash
+pip install pandas numpy matplotlib
+```
 
-1. Open the project folder in VS Code.
-2. Create and activate a virtual environment if desired.
-3. Install the required packages:
+Download the Mathematics data file named `student-mat.csv` from the UCI
+dataset page, save it next to the notebook, then open and run
+`student_performance_data_analysis.ipynb`.
 
-   ```bash
-   pip install pandas numpy matplotlib
-   ```
+## Analysis overview
 
-4. Open `first_data_science_project.ipynb` and run the notebook cells.
-
-## Security and repository hygiene
-
-This project is intentionally kept minimal, and no credentials, API keys, or private datasets were detected in the current workspace. Before publishing to GitHub, review any new files added later for:
-
-- `.env` files
-- API tokens or secrets
-- local data files or CSV exports
-- private or proprietary datasets
-
-## GitHub readiness
-
-This project is ready for local documentation and safe repository setup, but Git is not yet initialized in the project folder and no GitHub remote is configured.
-
-## License
-
-No license has been specified yet.
+The notebook explores dataset structure and missing values, summarizes and
+plots final Mathematics grades, compares average grades across study-time
+groups, examines absences, and calculates correlations between grades from
+earlier periods and final performance. The findings are descriptive and do
+not establish cause and effect or predictive accuracy on unseen students.
